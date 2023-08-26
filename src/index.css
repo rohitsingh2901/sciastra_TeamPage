@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#app{
+  background-image: url(https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?w=1060&t=st=1693038047~exp=1693038647~hmac=557586070cfb632ed45a3f4b1ee7363fbe9dea5f4866e541a96d4535c71dab22);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card{
+  transition: transform 0.3s ease;
+}
+.card:hover{
+  transform: translateY(-5px);
+}
+.item img{
+    width: 150px !important;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 2px 3px 10px 2px rgba(115, 83, 245, 0.433);   
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
