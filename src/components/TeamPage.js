@@ -212,8 +212,46 @@ const TeamPage = () => {
       "img": "Team photos/3businessman-character-avatar-isolated_24877-60111-removebg-preview (7).png"
     }
   ];
+  const advisor = [{
+    "name": "Dr. Omkar",
+    "affiliation": "IIT Madras",
+    "img": "Team photos/8businessman-character-avatar-isolated_24877-60111-removebg-preview (2).png"
+  },
+  {
+    "name": "Anshuman Patra",
+    "affiliation": "IISER, Berhampur",
+    "img": "Team photos/3businessman-character-avatar-isolated_24877-60111-removebg-preview (7).png"
+  },
+  {
+    "name": "Tanmay Singh",
+    "affiliation": "NISER",
+    "img": "Team photos/8businessman-character-avatar-isolated_24877-60111-removebg-preview (2).png"
+  },
+  {
+    "name": "Sagar Rathore",
+    "affiliation": "IISER Berhampur",
+    "img": "Team photos/4businessman-character-avatar-isolated_24877-60111-removebg-preview (6).png"
+  },
+  {
+    "name": "Abhay Gupta",
+    "affiliation": "IIT Bombay",
+    "img": "Team photos/7businessman-character-avatar-isolated_24877-60111-removebg-preview (3).png"
+  },
+  {
+    "name": "Siddhart Bhatt",
+    "affiliation": "IISER ",
+    "img": "Team photos/5businessman-character-avatar-isolated_24877-60111-removebg-preview (5).png"
+  },
+  {
+    "name": "Ripunjay Dwivedi",
+    "affiliation": "CMI",
+    "img": "Team photos/2businessman-character-avatar-isolated_24877-60111-removebg-preview.png"
+  },
+]
   
-  
+  const openEmailClient = (name) => {
+    window.location.href = `mailto:${name}`
+  };
   
   
   
@@ -221,11 +259,11 @@ const TeamPage = () => {
   const options = {
     autoHeightClass: "my-12",
     autoplay: true,
-    dots: false,
-    autoplayTimeout: 500,
-    autoplaySpeed: 50000,
+    dots: true,
     autoplayHoverPause: true,
     responsiveClass: true,
+    mouseDrag:true,
+    touchDrag:true,
     responsive: {
       0: {
         items: 1,
@@ -308,7 +346,7 @@ const TeamPage = () => {
     <>
       <div>
         <h1 className="font-extrabold text-center my-3">
-          Team <span className="text-red-600">Page</span>
+          Welcome to <span className="text-purple-600">Team</span> <span className="text-purple-600">Page</span>
         </h1>
         <h3 className="font-bold text-center my-5">
           Learn from{" "}
@@ -339,7 +377,7 @@ const TeamPage = () => {
       </div>
       <div className="container">
         <h1 className="font-bold text-center my-5">
-          Meet your <span className="text-red-600">mentors</span>
+          Meet your <span className="text-purple-600">mentors</span>
         </h1>
         <h3 className="font-bold my-12">Biology</h3>
         <OwlCarousel className="flex owl-carousel owl-theme mt-8" {...options}>
@@ -386,9 +424,23 @@ const TeamPage = () => {
           </div>))}
         </OwlCarousel>
       </div>
-      <div className="">
-
+      <div className="container">
+      <h1 className="font-bold text-center my-5">
+          Mentor and <span className="text-purple-600">Advisor</span>
+        </h1>
+        <OwlCarousel className="flex owl-carousel owl-theme mt-8" {...options}>
+        {advisor.map((a) => (<div className="item">
+          <img
+            
+            alt="team"
+            src={a.img}
+          ></img>
+          <p className="text-center">{a.name}-{a.affiliation}<button onClick={()=>openEmailClient(a.name)} className="btnn btn-sm">Message him now</button></p>
+          
+          </div>))}
+        </OwlCarousel>
       </div>
+
     </>
   );
 };

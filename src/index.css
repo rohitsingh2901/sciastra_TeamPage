@@ -38,3 +38,24 @@ code {
   justify-content: center;
   align-items: center;
 }
+.main_footer{
+  background-image: url(/public/footermain.jpeg);
+}
+.login-button{
+  background-image: linear-gradient(to right,rgb(255, 0, 255), rgb(81, 81, 157));
+  border-radius: 15px;
+  padding: 4px 15px;
+}
+.login-button:hover{
+  color: black;
+}
+.btn{
+   background-image: linear-gradient(to right,rgb(197, 145, 197), rgb(98, 98, 224));
+  border-radius: 15px;
+  color: white;
+}
+.btnn{
+   background-image: linear-gradient(to right,rgb(197, 145, 197), rgb(98, 98, 224));
+  border-radius: 15px;
+  color: white;
+}
