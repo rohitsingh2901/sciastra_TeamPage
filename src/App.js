@@ -4,7 +4,7 @@ import TeamPage from "./components/TeamPage";
 
 function App() {
   return (
-    <div>
+    <div id="TeamPage">
       <Navbar/>
      <TeamPage/>
      <Footer/>

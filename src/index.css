@@ -59,3 +59,18 @@ code {
   border-radius: 15px;
   color: white;
 }
+#TeamPage {
+  position: relative; 
+}
+
+#TeamPage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://img.freepik.com/premium-vector/geometric-abstract-background-with-connected-dots-lines-molecular-structure-communication-digital-technology-background-network-connection-vector-illustration-eps10-business-design_299644-8407.jpg?w=740);
+  opacity: 0.3;
+  z-index: -1;
+}

@@ -343,7 +343,7 @@ const TeamPage = () => {
   ];
 
   return (
-    <>
+    <div>
       <div>
         <h1 className="font-extrabold text-center my-3">
           Welcome to <span className="text-purple-600">Team</span> <span className="text-purple-600">Page</span>
@@ -441,7 +441,7 @@ const TeamPage = () => {
         </OwlCarousel>
       </div>
 
-    </>
+    </div>
   );
 };
 
