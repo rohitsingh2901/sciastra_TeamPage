@@ -435,8 +435,8 @@ const TeamPage = () => {
             alt="team"
             src={a.img}
           ></img>
-          <p className="text-center">{a.name}-{a.affiliation}<button onClick={()=>openEmailClient(a.name)} className="btnn btn-sm">Message him now</button></p>
-          
+          <p className="text-center">{a.name}-{a.affiliation}</p>
+          <button onClick={()=>openEmailClient(a.name)} className="btnn btn-sm">Message him now</button>
           </div>))}
         </OwlCarousel>
       </div>
