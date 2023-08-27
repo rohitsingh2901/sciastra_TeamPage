@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/sciastra_TeamPage/static/css/main.b6ffa681.css",
-    "main.js": "/sciastra_TeamPage/static/js/main.9c657c8e.js",
+    "main.js": "/sciastra_TeamPage/static/js/main.9c6d2ccf.js",
     "static/js/787.f7755ae6.chunk.js": "/sciastra_TeamPage/static/js/787.f7755ae6.chunk.js",
     "static/media/footermain.jpeg": "/sciastra_TeamPage/static/media/footermain.be6e38127974e119b0cc.jpeg",
     "index.html": "/sciastra_TeamPage/index.html",
     "main.b6ffa681.css.map": "/sciastra_TeamPage/static/css/main.b6ffa681.css.map",
-    "main.9c657c8e.js.map": "/sciastra_TeamPage/static/js/main.9c657c8e.js.map",
+    "main.9c6d2ccf.js.map": "/sciastra_TeamPage/static/js/main.9c6d2ccf.js.map",
     "787.f7755ae6.chunk.js.map": "/sciastra_TeamPage/static/js/787.f7755ae6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6ffa681.css",
-    "static/js/main.9c657c8e.js"
+    "static/js/main.9c6d2ccf.js"
   ]
 }
